@@ -1,11 +1,6 @@
-import { motion, stagger } from "framer-motion";
-import {
-  staggerContainer,
-  imageVariant,
-  textContainer,
-} from "../utils/motionVariants";
-import { StaggerVariant, StateValues } from "../utils/motionTypes";
-import { ReactNode } from "react";
+import { motion } from "framer-motion";
+import { staggerContainer, imageVariant } from "../utils/motionVariants";
+import { StaggerVariant } from "../utils/motionTypes";
 import ReactLogo from "../assets/react.svg";
 import JSLogo from "../assets/javascript.svg";
 import TSLogo from "../assets/typescript.svg";
@@ -16,6 +11,7 @@ import GithubLogo from "../assets/github.svg";
 import AWSLogo from "../assets/aws.svg";
 import DockerLogo from "../assets/docker.svg";
 import RedisLogo from "../assets/redis.svg";
+import Gradient from "../rudimentary/Gradient";
 
 function TechStack() {
   const locations: string[] = [
@@ -33,15 +29,20 @@ function TechStack() {
 
   const containerVariants: StaggerVariant = staggerContainer(1);
   return (
-    <div className=" flex flex-col  items-center ">
-      <h1 className="text-lg md:text-xl  lg:text-3xl xl:text-4xl 2xl:text-4xl">
+    <div className=" relative flex flex-col  items-center  z-10 ">
+      <h1 className="text-lg md:text-xl  lg:text-3xl xl:text-4xl 2xl:text-5xl mx-10 my-10">
         My Tech Stack
       </h1>
+      <Gradient
+        gradient="gradient-normal"
+        className="gradient-local"
+      ></Gradient>
       <motion.div
         variants={containerVariants}
         initial="hidden"
         whileInView="show"
-        className="relative m-5 p-2  grid grid-cols-3 lg:grid-cols-5  gap-4 items-center justify-center overflow-hidden"
+        viewport={{ once: false, amount: 0.25 }}
+        className="relative m-5 p-2  grid grid-cols-3 lg:grid-cols-5  gap-20 items-center justify-center overflow-hidden"
       >
         {locations.map((src, index) => (
           <motion.img

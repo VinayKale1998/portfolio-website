@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 
 function Socials() {
   return (
-    <div className="flex lg:flex-col absolute left-10 lg:left-auto lg:right-32 lg:top-20  mt-[-25px] text-3xl lg:text-4xl">
+    <div className="flex lg:flex-col  absolute left-0  top-20 lg:left-auto lg:right-32 lg:top-44  mt-[-25px] text-2xl  md:4xl lg:text-5xl">
       <a
         className="m-1 p-1"
         target="new"
