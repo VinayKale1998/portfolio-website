@@ -24,7 +24,7 @@ const TypingText: FC<TypingTextProps> = ({
       initial={StateValues.hidden}
       whileInView={StateValues.show}
     >
-      {Array.from(text)?.map((char, index) => {
+      {Array.from(text).map((char, index) => {
         return (
           <motion.span variants={textVariant} key={index} className={style}>
             {char}

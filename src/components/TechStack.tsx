@@ -50,9 +50,10 @@ function TechStack() {
             src={src}
             alt={`image-${index}`}
             className="w-16 md:w-15 lg:w-20 xl:w-32 mx-4 p-2 col-span-1"
-            variants={imageVariant("down", "tween", 0.1, 2)}
+            variants={imageVariant("right", "tween", 0.1, 2)}
             initial="hidden"
             animate="show"
+            viewport={{ once: false, amount: 0.25 }}
           />
         ))}
       </motion.div>
