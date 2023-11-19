@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import { staggerContainer } from "../utils/motionVariants";
 import TypingText from "./TypingText";
 import Card from "./Card";
 import { useEffect, useState } from "react";
