@@ -26,7 +26,7 @@ function Info() {
     <div className="absolute flex flex-col  top-[15vh] md:top-[20vh]  left-0 md:left-10 ">
       <TypingText
         text={currentText}
-        key={currentText}
+        key={currentIndex}
         style="text-lg md:text-xl  lg:text-3xl xl:text-4xl 2xl:text-5xl gradient-text  font-bold"
         className=" gradient-text"
         staggerDuration={1}
