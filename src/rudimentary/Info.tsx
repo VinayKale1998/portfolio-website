@@ -1,6 +1,7 @@
 import TypingText from "./TypingText";
 import Card from "./Card";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const skills: string[] = ["Full-Stack Web Developer", "SDET", "Problem Solver"];
 
@@ -23,7 +24,7 @@ function Info() {
   }, [skills]);
 
   return (
-    <div className="absolute flex flex-col  top-[15vh] md:top-[20vh]  left-0 md:left-10 ">
+    <div className="absolute flex flex-col  top-[15vh] md:top-[20vh]  left-0 md:left-10  ">
       <TypingText
         text={currentText}
         key={currentIndex}
@@ -31,9 +32,12 @@ function Info() {
         className=" gradient-text"
         staggerDuration={1}
       />
-      <Card className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold m-1 p-1 name relative top-56 lg:top-10">
+      <motion.div
+        className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold m-1 p-1 name relative top-32  lg:top-10 "
+        whileHover={{ scale: 1.1 }}
+      >
         Vinay Kale
-      </Card>
+      </motion.div>
     </div>
   );
 }

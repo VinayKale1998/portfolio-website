@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { staggerContainer, imageVariant } from "../utils/motionVariants";
-import { StaggerVariant } from "../utils/motionTypes";
+// import { staggerContainer, imageVariant } from "../utils/motionVariants";
+// import { StaggerVariant } from "../utils/motionTypes";
 import ReactLogo from "../assets/react.svg";
 import JSLogo from "../assets/javascript.svg";
 import TSLogo from "../assets/typescript.svg";
@@ -27,36 +27,29 @@ function TechStack() {
     RedisLogo,
   ];
 
-  const containerVariants: StaggerVariant = staggerContainer(1);
   return (
-    <div className=" relative flex flex-col  items-center  z-10 ">
-      <h1 className="text-lg md:text-xl  lg:text-3xl xl:text-4xl 2xl:text-5xl mx-10 my-10">
-        My Tech Stack
+    <div className=" relative flex flex-col  items-center   z-10 ">
+      <h1 className="text-2xl md:text-xl  lg:text-3xl xl:text-4xl 2xl:text-5xl mx-10 my-10">
+        My Tech-Stack
       </h1>
       <Gradient
         gradient="gradient-normal"
         className="gradient-local"
       ></Gradient>
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
-        className="relative m-5 p-2  grid grid-cols-3 lg:grid-cols-5  gap-20 items-center justify-center overflow-hidden"
-      >
+      <div className=" tech-stack relative m-5 p-2  grid grid-cols-3 md:grid-cols-5 gap-4  lg:gap-20 items-center justify-center overflow-hidden z-10">
         {locations.map((src, index) => (
           <motion.img
-            key={index}
+            initial={{ opacity: 0, translateX: 50 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.3 }}
+            viewport={{ once: true, amount: 0.1 }}
+            key={src}
             src={src}
             alt={`image-${index}`}
             className="w-16 md:w-15 lg:w-20 xl:w-32 mx-4 p-2 col-span-1"
-            variants={imageVariant("right", "tween", 0.1, 2)}
-            initial="hidden"
-            animate="show"
-            viewport={{ once: false, amount: 0.25 }}
           />
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }
