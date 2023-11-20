@@ -39,14 +39,14 @@ function TechStack() {
       <div className="my-4  tech-stack relative m-auto  grid grid-cols-3  md:grid-cols-5 gap-8  lg:gap-20  overflow-hidden z-10 max-h-[60vh] ">
         {locations.map((src, index) => (
           <motion.img
-            initial={{ opacity: 0, translateX: 50 }}
+            initial={{ opacity: 0, translateX: 40 }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 0.6, delay: index * 0.3 }}
             viewport={{ once: true, amount: 0.35 }}
             key={src}
             src={src}
             alt={`image-${index}`}
-            className="w-18 md:w-24 lg:w-20 xl:w-32 mx-0 p-2 col-span-1 "
+            className="w-[4.5rem] md:w-24 lg:w-20 xl:w-32 mx-0 p-2 col-span-1 "
           />
         ))}
       </div>
