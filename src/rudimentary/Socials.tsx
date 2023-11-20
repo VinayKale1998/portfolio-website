@@ -24,7 +24,7 @@ function Socials() {
 
   return (
     <motion.div
-      className="flex lg:flex-col  absolute left-0  top-14 lg:left-auto lg:right-32 lg:top-44  mt-[-25px] text-4xl  md:4xl lg:text-5xl"
+      className="flex lg:flex-col  absolute left-0  top-28 lg:left-auto lg:right-32 lg:top-56   text-4xl  md:4xl lg:text-5xl"
       variants={staggerVariant}
       initial="hidden"
       animate="visible"

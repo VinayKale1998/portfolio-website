@@ -24,13 +24,14 @@ function Info() {
   }, [skills]);
 
   return (
-    <div className="absolute flex flex-col  top-[50vh] md:top-[20vh]  left-0 md:left-10  ">
+    <div className="absolute flex flex-col  top-[50vh] md:top-[40vh]  left-0 md:left-10  ">
+      <Card className="text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold m-1 p-1 name  lg:top-10 ">
+        Hello, I'm a
+      </Card>
       <Card className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold m-1 p-1 name gradient-text   lg:top-10 ">
         Vinay Kale
       </Card>
-      <Card className="text-3xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold m-1 p-1 name  lg:top-10 ">
-        I'm a
-      </Card>
+
       <TypingText
         text={currentText}
         key={currentIndex}

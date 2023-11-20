@@ -30,20 +30,17 @@
 
 .gradient-spotlight {
   background-image: linear-gradient(
-    270deg,
-    hsl(295deg 60% 51%) 91%,
-    hsl(284deg 70% 73%) 26%,
-    hsl(257deg 70% 86%) 39%,
-    hsl(202deg 92% 90%) 50%,
-    hsl(215deg 77% 81%) 61%,
-    hsl(221deg 73% 70%) 74%,
-    hsl(220deg 76% 51%) 100%
+    to bottom left,
+    #002182 20%,
+    /* Indigo/dark blue at the top */ #002980 30%,
+    /* Purple in the middle */ #c71585 70%,
+    /* Medium violet red towards the bottom */ #c0c6ff 100%
+      /* Pink at the bottom */
   );
-  filter: blur(125px);
-  background-size: 10% 10%;
-  background-position: right;
+  background-size: 50% 100%; /* Cover 50% of the width and 100% of the height */
+  background-position: top right;
   background-repeat: no-repeat;
-  animation: breathe 3s ease-in-out infinite;
+  filter: blur(125px);
 }
 .gradient-normal {
   background-image: linear-gradient(
