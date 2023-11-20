@@ -32,30 +32,37 @@
   background-image: linear-gradient(
     to bottom left,
     #002182 20%,
-    /* Indigo/dark blue at the top */ #002980 30%,
-    /* Purple in the middle */ #c71585 70%,
-    /* Medium violet red towards the bottom */ #c0c6ff 100%
-      /* Pink at the bottom */
+    #002980 30%,
+    #c71585 70%,
+    #c0c6ff 100%
   );
-  background-size: 50% 100%; /* Cover 50% of the width and 100% of the height */
+  background-size: 50% 100%;
   background-position: top right;
   background-repeat: no-repeat;
   filter: blur(125px);
 }
-.gradient-normal {
+.gradient-projects {
   background-image: linear-gradient(
-    to right,
-    hsl(38, 76%, 51%) 0%,
-    hsl(284deg 70% 73%) 26%,
-    hsl(257deg 70% 86%) 39%,
-    hsl(202deg 92% 90%) 50%,
-    hsl(215deg 77% 81%) 61%,
-    hsl(221deg 73% 70%) 74%,
-    hsl(220deg 76% 51%) 100%
+    to top left,
+    #002182 10%,
+    #c71585 30%,
+    #3744ba 50%
   );
   filter: blur(125px);
   background-size: 70% 70%;
-  background-position: center;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.gradient-tech {
+  background-image: linear-gradient(
+    to top right,
+    #002182 60%,
+
+    #c0c6ff 10%
+  );
+  filter: blur(125px);
+  background-size: 80% 80%;
+  background-position: bottom left;
   background-repeat: no-repeat;
 }
 .flexr {
