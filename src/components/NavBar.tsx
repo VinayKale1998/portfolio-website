@@ -9,11 +9,11 @@ function NavBar() {
         {" "}
         About
       </a>
-      <a className=" text-xs  sm:text:lg md:text-lg lg:text-lg xl:text-xl mx-2   lg:mx-5 xl:mx-10 2xl:mx-15 font-bold">
+      <a className=" text-xs  sm:text:lg md:text-lg lg:text-lg xl:text-xl mx-1   lg:mx-5 xl:mx-10 2xl:mx-15 font-bold">
         {" "}
         Tech-Stack
       </a>
-      <a className=" text-xs md:text-lg lg:text-lg xl:text-xl   mx-2 lg:mx-5 xl:mx-10 2xl:mx-15  font-bold">
+      <a className=" text-xs md:text-lg lg:text-lg xl:text-xl   mx-1 lg:mx-5 xl:mx-10 2xl:mx-15  font-bold">
         {" "}
         Projects
       </a>

@@ -36,7 +36,7 @@ function TechStack() {
         gradient="gradient-normal"
         className="gradient-local"
       ></Gradient>
-      <div className=" tech-stack relative m-auto  grid grid-cols-3 md:grid-cols-5 gap-8  lg:gap-20 items-center justify-center overflow-hidden z-10">
+      <div className=" tech-stack relative m-auto  grid grid-cols-3 md:grid-cols-5 gap-8  lg:gap-20 items-center justify-center overflow-hidden z-10 min-h-[80vh]">
         {locations.map((src, index) => (
           <motion.img
             initial={{ opacity: 0, translateX: 50 }}
