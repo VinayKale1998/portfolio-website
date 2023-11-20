@@ -1,6 +1,6 @@
 function NavBar() {
   return (
-    <nav className=" flex relative top-3 left-0 right-0 m-auto   items-center min-w-[80%] max-w-[98%] w-[98%] sm:max-w-[95%]  xl:max-w-[85%]  p-1  rounded-full max-h-[7vh]  sm:max-h-[8vh] lg:min-h-[10vh] bg-secondar-white dark:bg-primary-purple  border-0.5 border-purple-300  overflow-hidden  ">
+    <nav className=" flex relative top-4 left-0 right-0 m-auto   items-center min-w-[80%] max-w-[98%] w-[98%] sm:max-w-[95%]  xl:max-w-[85%]  p-1  rounded-full min-h-[9vh]  sm:max-h-[10vh] lg:min-h-[12vh] bg-secondar-white dark:bg-primary-purple  border-0.5 border-purple-300  overflow-hidden  ">
       <a className="text-xl  sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold ml-1 md:mx-2 lg:mx-5 xl:mx-10 2xl:mx-15 ">
         {" "}
         Vinay kale
