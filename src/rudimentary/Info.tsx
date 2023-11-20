@@ -3,7 +3,7 @@ import Card from "./Card";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const skills: string[] = ["Full-Stack Web Developer", "SDET", "Problem Solver"];
+const skills: string[] = ["MERN-Stack Developer", "SDET", "Problem Solver"];
 
 function Info() {
   const [currentText, setCurrentText] = useState(skills[0]);
@@ -24,20 +24,20 @@ function Info() {
   }, [skills]);
 
   return (
-    <div className="absolute flex flex-col  top-[15vh] md:top-[20vh]  left-0 md:left-10  ">
+    <div className="absolute flex flex-col  top-[50vh] md:top-[20vh]  left-0 md:left-10  ">
+      <Card className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold m-1 p-1 name gradient-text   lg:top-10 ">
+        Vinay Kale
+      </Card>
+      <Card className="text-3xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold m-1 p-1 name  lg:top-10 ">
+        I'm a
+      </Card>
       <TypingText
         text={currentText}
         key={currentIndex}
-        style="text-lg md:text-xl  lg:text-3xl xl:text-4xl 2xl:text-5xl gradient-text  font-bold"
+        style=" relative text-2xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl text-white left-1  font-bold"
         className=" gradient-text"
         staggerDuration={1}
       />
-      <motion.div
-        className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold m-1 p-1 name relative top-32  lg:top-10 "
-        whileHover={{ scale: 1.1 }}
-      >
-        Vinay Kale
-      </motion.div>
     </div>
   );
 }

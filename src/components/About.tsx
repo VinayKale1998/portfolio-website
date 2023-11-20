@@ -14,7 +14,7 @@ function About() {
       initial={StateValues.hidden}
       whileInView={StateValues.show}
       viewport={{ once: false, amount: 0.5 }}
-      className="relative m-5 p-2 w-full min-w-[100vw] min-h-[40vh] lg:min-h-[90vh] z-10   "
+      className="relative m-2 p-2 w-full min-w-[100vw] min-h-[85vh] lg:min-h-[90vh] z-10    "
     >
       <Gradient gradient="gradient-spotlight " className="grandient-main" />
       <Info />
