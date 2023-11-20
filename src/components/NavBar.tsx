@@ -1,19 +1,19 @@
 function NavBar() {
   return (
-    <nav className=" flex relative top-3 left-0 right-0 m-auto  justify-start items-center min-w-[80%] max-w-[98%] w-[98%] sm:max-w-[95%]  xl:max-w-[85%]  px-4 py-4 rounded-full max-h-[7vh]  sm:max-h-[8vh] lg:min-h-[10vh] bg-secondar-white dark:bg-primary-purple  border-0.5 border-purple-300  overflow-hidden  ">
-      <a className="text-lg sm: sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold mx-1 md:mx-2 lg:mx-5 xl:mx-10 2xl:mx-15 ">
+    <nav className=" flex relative top-3 left-0 right-0 m-auto   items-center min-w-[80%] max-w-[98%] w-[98%] sm:max-w-[95%]  xl:max-w-[85%]  p-1  rounded-full max-h-[7vh]  sm:max-h-[8vh] lg:min-h-[10vh] bg-secondar-white dark:bg-primary-purple  border-0.5 border-purple-300  overflow-hidden  ">
+      <a className="text-xl  sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold mx-1 md:mx-2 lg:mx-5 xl:mx-10 2xl:mx-15 ">
         {" "}
         Vinay kale
       </a>
-      <a className="  md:block text-xs  sm:text:lg md:text-lg lg:text-lg xl:text-xl  mx-1  lg:mx-5 xl:mx-10 2xl:mx-15 font-bold">
+      <a className="  md:block text-xs  sm:text:lg md:text-lg lg:text-lg xl:text-xl  ml-4  lg:mx-5 xl:mx-10 2xl:mx-15 font-bold">
         {" "}
         About
       </a>
-      <a className=" text-xs  sm:text:lg md:text-lg lg:text-lg xl:text-xl mx-1   lg:mx-5 xl:mx-10 2xl:mx-15 font-bold">
+      <a className=" text-xs  sm:text:lg md:text-lg lg:text-lg xl:text-xl mx-3   lg:mx-5 xl:mx-10 2xl:mx-15 font-bold">
         {" "}
         Tech-Stack
       </a>
-      <a className=" text-xs md:text-lg lg:text-lg xl:text-xl   mx-1 lg:mx-5 xl:mx-10 2xl:mx-15  font-bold">
+      <a className=" text-xs md:text-lg lg:text-lg xl:text-xl   ml-2 lg:mx-5 xl:mx-10 2xl:mx-15  font-bold">
         {" "}
         Projects
       </a>
