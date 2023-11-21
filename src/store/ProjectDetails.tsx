@@ -46,6 +46,6 @@ const FlashKrewDetails: ProjectDetails = {
   stack: ["React", "Redux", "Tailwind", "Framer-motion", "Docker", "AWS"],
 };
 
-const ProjectsArray = [BusChilliDetails, ConversoDetails, FlashKrewDetails];
+const ProjectsData = [BusChilliDetails, ConversoDetails, FlashKrewDetails];
 
-export { ProjectsArray };
+export { ProjectsData };

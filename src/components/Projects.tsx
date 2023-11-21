@@ -3,11 +3,7 @@ import Card from "../rudimentary/Card";
 import Gradient from "../rudimentary/Gradient";
 import { useRef } from "react";
 import Project from "../rudimentary/Project";
-
-import Flashkrew from "../assets/FlashKrew.png";
-import BusChilli from "../assets/BusChilli.png";
-import Converso from "../assets/Converso.png";
-import { ProjectsArray } from "../store/ProjectDetails";
+import { ProjectsData } from "../store/ProjectDetails";
 
 export interface ProjectDetails {
   src: string;
@@ -27,7 +23,7 @@ function Projects() {
     },
   };
 
-  const ProjectDefinitions: ProjectDetails[] = ProjectsArray.map((item) => {
+  const ProjectDefinitions: JSX.Element[] = ProjectsData.map((item) => {
     return (
       <Project
         src={item.src}

@@ -1,5 +1,6 @@
 import React, { type FC } from "react";
 import { motion } from "framer-motion";
+import Gradient from "./Gradient";
 
 interface ProjectProps {
   src: string;
@@ -26,16 +27,20 @@ const Project: FC<ProjectProps> = ({
   return (
     <motion.div
       variants={childVariants}
-      className="BusChilli flex justify-between  border p-1 m-1 w-[90vw] md:w-[80vw] lg:w-[60vw] xl:w-[50vw]  rounded-md h-[30vh] "
+      className=" relative BusChilli flex justify-between  border p-1 m-1 w-[90vw] md:w-[80vw] lg:w-[60vw] xl:w-[50vw]  rounded-md h-[30vh] z-30 "
     >
-      <div className="relative flex flex-col items-center border  w-[50%]">
+      <Gradient
+        gradient="gradient-project"
+        className=" absolute gradient z-20"
+      ></Gradient>{" "}
+      <div className="relative flex flex-col items-center border rounded-lg  w-[50%]">
         <h1 className=" p-1 m-1 text-xl md:text-2xl lg:text-3xl xl:text-3xl">
           {title}
         </h1>
         <p className=" p-1 m-1"> {description}</p>
       </div>
       <div className="relative  flex  ProjectDefinitions border w-[25%]">
-        <img src={src} className="w-20 md:w-28 lg:w-32 xl:w-44" />
+        <img src={src} className="w-full" />
       </div>
     </motion.div>
   );

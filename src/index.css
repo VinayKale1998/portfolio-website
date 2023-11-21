@@ -52,6 +52,19 @@
   background-size: 70% 70%;
   background-position: bottom right;
   background-repeat: no-repeat;
+  z-index: 1;
+}
+.gradient-project {
+  background-image: linear-gradient(
+    to top left,
+    #002182 10%,
+    #c71585 30%,
+    #3744ba 50%
+  );
+  filter: blur(100px);
+  background-size: 70% 70%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 .gradient-tech {
   background-image: linear-gradient(
