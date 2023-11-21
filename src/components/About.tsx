@@ -21,8 +21,8 @@ function About() {
       <NavBar></NavBar>
       <Info />
       <Socials
-        className="flex lg:flex-col  absolute left-0  top-28 lg:left-auto lg:right-32 lg:top-56   text-4xl  md:4xl lg:text-5xl"
-        animate={true}
+        className="flex lg:flex-col  absolute left-[20vw]  top-28 lg:left-auto lg:right-32 lg:top-56   text-4xl  md:4xl lg:text-5xl"
+        animate={false}
       />
     </motion.section>
   );

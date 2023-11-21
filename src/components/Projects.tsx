@@ -2,9 +2,21 @@ import { motion, useInView } from "framer-motion";
 import Card from "../rudimentary/Card";
 import Gradient from "../rudimentary/Gradient";
 import { useRef } from "react";
+import Project from "../rudimentary/Project";
+
+import Flashkrew from "../assets/FlashKrew.png";
+import BusChilli from "../assets/BusChilli.png";
+import Converso from "../assets/Converso.png";
+import { ProjectsArray } from "../store/ProjectDetails";
+
+export interface ProjectDetails {
+  src: string;
+  title: string;
+  description: string;
+  stack: string[];
+}
 function Projects() {
   const animateref = useRef<HTMLDivElement | null>(null);
-
   const isInView = useInView(animateref, { once: false, amount: 0.1 });
 
   const parentVariants = {
@@ -15,17 +27,16 @@ function Projects() {
     },
   };
 
-  const childVariants = {
-    hidden: { x: -100, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transistion: {
-        type: "tween",
-        duration: 1,
-      },
-    },
-  };
+  const ProjectDefinitions: ProjectDetails[] = ProjectsArray.map((item) => {
+    return (
+      <Project
+        src={item.src}
+        description={item.description}
+        title={item.title}
+        key={item.src}
+      ></Project>
+    );
+  });
 
   return (
     <motion.div
@@ -46,26 +57,7 @@ function Projects() {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        <motion.div
-          variants={childVariants}
-          className="BusChilli border p-1 m-1 w-[90vw] md:w-[80vw] lg:w-[60vw] xl:[50vw] 2xl:[30vw] rounded-md h-[28vh] "
-        >
-          {" "}
-          Bus
-        </motion.div>
-        <motion.div
-          variants={childVariants}
-          className="WebChat border  p-1 m-1 w-[90vw] md:w-[80vw] lg:w-[60vw] xl:[50vw] 2xl:[30vw] rounded-md h-[28vh] "
-        >
-          Chat
-        </motion.div>
-        <motion.div
-          variants={childVariants}
-          className="FlashCard-Generator border p-1 m-1 w-[90vw] md:w-[80vw] lg:w-[60vw] xl:[50vw] 2xl:[30vw] rounded-md  h-[28vh] "
-        >
-          {" "}
-          Flash
-        </motion.div>
+        {ProjectDefinitions}
       </motion.div>
     </motion.div>
   );

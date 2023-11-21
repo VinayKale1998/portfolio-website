@@ -4,12 +4,17 @@ function NavBar() {
   return (
     <nav
       id="#section-about"
-      className="  flex relative top-2 m-auto  items-center min-w-[80%] max-w-[95%] w-[98%] sm:max-w-[95%]  xl:max-w-[5%]  p-2  rounded-full min-h-[9vh]  sm:max-h-[10vh] lg:min-h-[12vh]   border-0.5 border-purple-300  overflow-hidden cursor-pointer   "
+      className="  flex relative top-2 m-auto  items-center min-w-[80%] max-w-[100%] w-[108%] sm:max-w-[95%]  xl:max-w-[5%]  p-2  rounded-full min-h-[9vh]  sm:max-h-[10vh] lg:min-h-[12vh]   border-0.5 border-purple-300  overflow-hidden cursor-pointer   "
     >
-      <a className="text-xl  sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold ml-1 md:mx-2 lg:mx-5 xl:mx-10 2xl:mx-15 ">
+      <Link
+        to="#section-about"
+        smooth={true}
+        duration={200}
+        className="text-xl  sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold ml-1 md:mx-2 lg:mx-5 xl:mx-10 2xl:mx-15 "
+      >
         {" "}
         Vinay kale
-      </a>
+      </Link>
       <Link
         to="#section-about"
         smooth={true}

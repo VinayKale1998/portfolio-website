@@ -23,7 +23,7 @@ function Info() {
   }, [skills]);
 
   return (
-    <div className="absolute flex flex-col  top-[50vh] md:top-[40vh]  left-0 md:left-10  ">
+    <div className="absolute flex flex-col  top-[50vh] md:top-[40vh]  left-0 md:left-20  ">
       <Card className="text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold m-1 p-1 name  lg:top-10 ">
         Hello, I'm
       </Card>
