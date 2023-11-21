@@ -15,14 +15,14 @@ function About() {
       initial={StateValues.hidden}
       whileInView={StateValues.show}
       viewport={{ once: false, amount: 0.5 }}
-      className="relative m-2 p-2 w-full min-w-[100vw] min-h-[100vh] lg:min-h-[100vh] z-10  overflow-hidden "
+      className="relative m-2 p-2 w-full min-w-[100vw] min-h-[100vh] lg:min-h-[120vh] 2xl:min-h-[100vh] z-10  overflow-hidden "
     >
       <Gradient gradient="gradient-spotlight " className="grandient-main" />
       <NavBar></NavBar>
       <Info />
       <Socials
-        className="flex lg:flex-col  absolute left-[20vw]  top-28 lg:left-auto lg:right-32 lg:top-56   text-4xl  md:4xl lg:text-5xl"
-        animate={false}
+        className="flex lg:flex-col  absolute left-[20vw] md:left-[10vw]  top-24 lg:left-auto lg:right-32 lg:top-56   text-3xl  md:4xl lg:text-5xl"
+        animate={true}
       />
     </motion.section>
   );

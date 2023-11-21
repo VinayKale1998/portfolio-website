@@ -13,7 +13,6 @@ const Project: FC<ProjectProps> = ({
   src,
   title,
   description,
-  link,
 }: ProjectProps) => {
   const childVariants = {
     hidden: { x: -100, opacity: 0 },
@@ -49,11 +48,11 @@ const Project: FC<ProjectProps> = ({
           {" "}
           {description}
           <span className="font-italic font-bold">
-            &nbsp; Link will be updated shortly :&#41;
+            .&nbsp; Link will be updated shortly :&#41;
           </span>
         </p>
       </div>
-      <div className="hidden md:flex relative    ProjectDefinitions  ">
+      <div className="hidden md:flex relative items  ProjectDefinitions p-1 m-1 ">
         <a target="new">
           {" "}
           <img

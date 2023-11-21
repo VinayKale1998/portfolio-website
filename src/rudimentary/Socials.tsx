@@ -20,21 +20,8 @@ function Socials({
     },
   };
 
-  const staggerVariant = {
-    visible: {
-      transition: {
-        staggerChildren: 1,
-      },
-    },
-  };
-
   return (
-    <motion.div
-      className={className}
-      variants={staggerVariant}
-      initial="hidden"
-      animate="visible"
-    >
+    <motion.div className={className}>
       <motion.a
         className="m-1 p-1"
         target="new"

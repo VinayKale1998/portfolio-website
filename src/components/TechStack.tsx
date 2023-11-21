@@ -30,7 +30,7 @@ function TechStack() {
   return (
     <div
       id="#section-tech"
-      className=" relative flex flex-col  items-center   z-10 min-h-[100vh] overflow-hidden "
+      className=" relative flex flex-col  items-center   z-10 min-h-[90vh] md:min-h-[100vh] overflow-hidden "
     >
       <h1 className="text-3xl md:text-3xl  lg:text-3xl xl:text-5xl 2xl:text-6xl mx-10 my-10">
         My Tech-Stack

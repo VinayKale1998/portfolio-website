@@ -6,7 +6,7 @@ function Gradient({
   className: string;
 }) {
   return (
-    <div className={`absolute inset-10  z-[-1] ${gradient} ${className}`} />
+    <div className={`absolute inset-0  z-[-1] ${gradient} ${className}`} />
   );
 }
 
