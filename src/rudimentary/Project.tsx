@@ -37,20 +37,24 @@ const Project: FC<ProjectProps> = ({
       ></Gradient>{" "}
       <div className="relative flex flex-col items-center  rounded-lg  w-[75vw] md:w-[65vw] lg:w-[35vw] xl:w-[25vw] space-y-2">
         <h1 className=" p-1 m-1 text-xl md:text-2xl lg:text-3xl xl:text-3xl flex font-bold ">
+          {" "}
           {title}
         </h1>
         <div className="relative  flex  ProjectDefinitions  md:hidden   ">
-          <a href={link} target="new">
+          <a target="new">
             <img src={src} className=" w-40 h-40 rounded-md object-center" />
           </a>
         </div>
-        <p className=" leading-[15px] text-xs md:text-md lg:text-lg xl:text-xl flex  justify-center w-[75%] lg:w-[80%] ">
+        <p className=" leading-[15px] text-xs md:text-md lg:text-lg xl:text-xl   justify-center w-[75%] lg:w-[80%] ">
           {" "}
           {description}
+          <span className="font-italic font-bold">
+            &nbsp; Link will be updated shortly :&#41;
+          </span>
         </p>
       </div>
       <div className="hidden md:flex relative    ProjectDefinitions  ">
-        <a href={link} target="new">
+        <a target="new">
           {" "}
           <img
             src={src}
