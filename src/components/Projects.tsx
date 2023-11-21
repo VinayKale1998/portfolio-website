@@ -10,6 +10,7 @@ export interface ProjectDetails {
   title: string;
   description: string;
   stack: string[];
+  link: string;
 }
 function Projects() {
   const animateref = useRef<HTMLDivElement | null>(null);
@@ -30,6 +31,7 @@ function Projects() {
         description={item.description}
         title={item.title}
         key={item.src}
+        link={item.link}
       ></Project>
     );
   });
@@ -37,7 +39,7 @@ function Projects() {
   return (
     <motion.div
       id="#section-projects"
-      className="relative flex flex-col min-h-[100vh] m-1 p-1 items-center overflow-hidden z-30"
+      className="relative flex flex-col min-h-[100vh] m-1 p-1 items-center  overflow-hidden z-30"
     >
       <Gradient
         className="gradient-normal"
@@ -48,7 +50,7 @@ function Projects() {
       </Card>
       <motion.div
         ref={animateref}
-        className="grid grid-row-3 p-2 m-2  "
+        className={`grid grid-row-${ProjectDefinitions.length} p-2 m-2 `}
         variants={parentVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
