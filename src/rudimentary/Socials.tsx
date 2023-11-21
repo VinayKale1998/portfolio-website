@@ -4,13 +4,19 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-function Socials() {
+function Socials({
+  className,
+  animate,
+}: {
+  className: string;
+  animate: boolean;
+}) {
   const jumpAnimation = {
     y: ["0%", "-20%", "0%"],
     transition: {
       duration: 1,
       ease: "easeInOut",
-      repeat: Infinity,
+      repeat: animate ? Infinity : 0,
     },
   };
 
@@ -24,7 +30,7 @@ function Socials() {
 
   return (
     <motion.div
-      className="flex lg:flex-col  absolute left-0  top-28 lg:left-auto lg:right-32 lg:top-56   text-4xl  md:4xl lg:text-5xl"
+      className={className}
       variants={staggerVariant}
       initial="hidden"
       animate="visible"

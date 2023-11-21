@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Gradient from "../rudimentary/Gradient";
 import Info from "../rudimentary/Info";
 import Socials from "../rudimentary/Socials";
-import NavBar from "./NavBar";
+import NavBar from "../rudimentary/NavBar";
 
 function About() {
   const containerVariants = staggerContainer(1);
@@ -20,7 +20,10 @@ function About() {
       <Gradient gradient="gradient-spotlight " className="grandient-main" />
       <NavBar></NavBar>
       <Info />
-      <Socials />
+      <Socials
+        className="flex lg:flex-col  absolute left-0  top-28 lg:left-auto lg:right-32 lg:top-56   text-4xl  md:4xl lg:text-5xl"
+        animate={true}
+      />
     </motion.section>
   );
 }

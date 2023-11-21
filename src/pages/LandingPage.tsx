@@ -1,4 +1,5 @@
 import About from "../components/About";
+import Footer from "../components/Footer";
 import Projects from "../components/Projects";
 import TechStack from "../components/TechStack";
 
@@ -8,6 +9,7 @@ function LandingPage() {
       <About />
       <TechStack></TechStack>
       <Projects />
+      <Footer></Footer>
     </main>
   );
 }
