@@ -28,7 +28,10 @@ function Projects() {
   };
 
   return (
-    <motion.div className="relative flex flex-col min-h-[100vh] m-1 p-1 items-center overflow-hidden z-30">
+    <motion.div
+      id="#section-projects"
+      className="relative flex flex-col min-h-[100vh] m-1 p-1 items-center overflow-hidden z-30"
+    >
       <Gradient
         className="gradient-normal"
         gradient="gradient-projects"
